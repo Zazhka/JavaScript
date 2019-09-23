@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+</head>
+<body>
+<script>
+    let int = prompt("Enter x:", "");
+    let exp = prompt("Enter n:", "");
+    if (exp < 1) {
+        alert(`Степень ${exp} не поддерживается. Введите другое число.`)
+    } else {
+        alert(pow(int, exp));
+    }
+    function pow(x, n){
+        return (x ** n);
+    }
+</script>
+</body>
+</html>
