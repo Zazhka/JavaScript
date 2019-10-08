@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array: task</title>
+</head>
+<body>
+
+    <script>
+        'use strict';
+        
+        function getMaxSubSum(arr) {
+            let maxSum = 0;
+            let partialSum = 0;
+        
+            for (let item of arr) {
+            partialSum += item;
+            maxSum = Math.max(maxSum, partialSum);
+            if (partialSum < 0) partialSum = 0;
+            }
+            alert(maxSum);
+            return maxSum;
+        }
+
+        getMaxSubSum([1,2,3]);
+
+    </script>
+
+
+</body>
+</html>

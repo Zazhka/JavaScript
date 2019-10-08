@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array: task</title>
+</head>
+<body>
+
+    <script>
+        'use strict';
+        
+        function sumInput() {
+            let arr = [];
+            let sum = 0;
+
+            while (true) {
+                let int = prompt("Enter an int", 0);
+                if (!isFinite(int) || int === "" || int === null) break;
+                arr.push(+int);
+            }
+
+            for (sum of arr) {
+                sum += sum;
+            }
+
+            alert( sum );
+        }
+
+        sumInput();
+
+    </script>
+
+
+</body>
+</html>
